@@ -14,8 +14,11 @@ Is a SpringBoot Microservice RESTful API
   cassandra host=localhost
 
   To run the application following commands has to be run on Cassandra DB
+  
     *CREATE KEYSPACE myretail WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+    
     *CREATE TABLE myretail.product(id int PRIMARY KEY, price decimal, currency text);
+    
     *INSERT INTO myretail.product (id, price, currency) VALUES(13860428, 56.78, 'USD');
 
 ### Build the application ###
@@ -41,17 +44,19 @@ java -jar target/product-1.0.jar
 * Price changes will be requested on Price or Currencycode.
 ### Sample Payloads for calling api ###
   *GET http://localhost:8080/myretail/products/13860428
-  Response:
-  {  
-   "id":13860428,
-   "name":"The Big Lebowski (Blu-ray)",
-   "currentPrice":{  
+    
+    Response:
+    {  
+      "id":13860428,
+      "name":"The Big Lebowski (Blu-ray)",
+      "currentPrice":{  
       "value":45.678,
       "currencyCode":"USD"
+     }
     }
-   }
    
    *PUT http://localhost:8080/myretail/products/13860428
+   
    Requst payload
    {
       "currencyCode": "USD",
