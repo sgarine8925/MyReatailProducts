@@ -1,14 +1,14 @@
 # MyRetailProducts
 Is a SpringBoot Microservice RESTful API
 
-# Tecnologies/Libraries
-  *Java 8
-  *Cassandra 3.11.4
-  *Maven 4.0
-  *SpringBoot Version 2.1.4
-  *Swagger 2.7
-  *PowerMock 1.7.4
- 
+### Technologies/Libraries ###
+* Java 8
+* Cassandra 3.11.4
+* Maven 4.0
+* SpringBoot Version 2.1.4
+* Swagger 2.7
+* PowerMock 1.7.4
+
 # Cassandra Database details
   database=myretail
   cassandra host=localhost
