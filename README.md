@@ -42,6 +42,9 @@ java -jar target/product-1.0.jar
 
 ### Assumptions Made ###
 * Price changes will be requested on Price or Currencycode.
+* For GET service, input can't be 0.
+* For PUT service on price, expectation is to have the price and currencycode.
+* If item information doesn't exist in Inventory don't proceed further.
 ### Sample Payloads for calling api ###
   *GET http://localhost:8080/myretail/products/13860428
     
