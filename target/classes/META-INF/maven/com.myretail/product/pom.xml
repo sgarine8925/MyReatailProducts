@@ -14,7 +14,7 @@
     <properties>
         <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
         <swagger.version>2.7.0</swagger.version>
-        <jakson.version>2.9.6</jakson.version>
+        <jakson.version>2.9.10.8</jakson.version>
         <powermock.version>1.7.4</powermock.version>
     </properties>
 
